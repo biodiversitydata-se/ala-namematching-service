@@ -22,10 +22,7 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: Setup Gradle
-        uses: gradle/gradle-build-action@v2
-
-      - name: Run build with Gradle Wrapper
+      - name: Run build with maven
         run: mvn clean package -Dmaven.test.skip
 
       - name: Upload war
