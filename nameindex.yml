@@ -11,6 +11,6 @@ volumes:
   data_nameindex_local:
     driver: local
     driver_opts:
-      type: node
+      type: none
       o: bind
       device: "/tmp/data_nameindex_local"

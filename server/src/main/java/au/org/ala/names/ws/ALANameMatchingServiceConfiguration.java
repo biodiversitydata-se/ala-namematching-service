@@ -52,8 +52,8 @@ public class ALANameMatchingServiceConfiguration extends Configuration {
         // swagger UI
         this.swaggerBundleConfiguration.setTitle("ALA Namematching API");
         this.swaggerBundleConfiguration.setDescription("A taxonomy service that maps scientific name queries onto taxon concepts");
-        this.swaggerBundleConfiguration.setContactUrl("https://ala.org.au");
-        this.swaggerBundleConfiguration.setContactEmail("support@ala.org.au");
+        //this.swaggerBundleConfiguration.setContactUrl("https://ala.org.au");
+        //this.swaggerBundleConfiguration.setContactEmail("support@ala.org.au");
         this.swaggerBundleConfiguration.setResourcePackage("au.org.ala.names.ws.api,au.org.ala.names.ws.client,au.org.ala.names.ws.resources");
         this.swaggerBundleConfiguration.setLicense("Mozilla Public Licence 1.1");
         this.swaggerBundleConfiguration.setVersion("1.8.1");
@@ -64,8 +64,9 @@ public class ALANameMatchingServiceConfiguration extends Configuration {
         Info info = new Info()
                 .title("ALA Namematching API")
                 .description("A taxonomy service that maps scientific name queries onto taxon concepts")
-                .contact(new Contact().email("support@ala.org.au").url("https://ala.org.au"))
-                .license(new License().name("Mozilla Public Licence 1.1"))
+                //.contact(new Contact().email("support@ala.org.au").url("https://ala.org.au"))
+                .license(new License().name("Mozilla Public Licence 1.1").url("https://www.mozilla.org/en-US/MPL/1.1/"))
+                .termsOfService("https://docs.biodiversitydata.se/sbdi-data/sbdi-atlas-terms-of-use/")
                 .version("1.8.1");
 
         oas.info(info);
