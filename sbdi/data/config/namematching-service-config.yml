@@ -3,13 +3,6 @@ logging:
   loggers:
     au.org.ala: WARN
     org.reflections: ERROR
-  appenders:
-    - type: file
-      currentLogFilename: /var/log/atlas/ala-namematching-service/ala-namematching-service.log
-      archive: true
-      archivedLogFilenamePattern: /var/log/atlas/ala-namematching-service/ala-namematching-service-%d.log
-      archivedFileCount: 5
-      logFormat: "%d{yyyy-MM-dd HH:mm:ss.SSS} %5p --- [%15.15t] %-40.40logger{39} : %m%n%ex"
 server:
   applicationConnectors:
     - type: http

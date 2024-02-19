@@ -1,4 +1,4 @@
-FROM eclipse-temurin:8
+FROM eclipse-temurin:11
 ENV TZ=Europe/Stockholm
 ENV DOCKERIZE_VERSION v0.7.0
 

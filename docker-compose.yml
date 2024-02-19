@@ -1,10 +1,6 @@
-version: '3.7'
+version: '3.8'
 
 services:
-  nameindex:
-    image: ghcr.io/biodiversitydata-se/ala-name-matching-index:1.0.1
-    volumes:
-      - data_nameindex:/data/lucene/namematching
 
   namematching-service:
     image: sbdi/ala-namematching-service-dev
@@ -22,3 +18,8 @@ services:
 
 volumes:
   data_nameindex:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: "/data/lucene/namematching"

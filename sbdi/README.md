@@ -16,11 +16,14 @@ $ tree /data/ala-namematching-service
 ```
 
 ### Index
-The service requires a taxonomic search index (Lucene) which can be setup using the docker image ghcr.io/biodiversitydata-se/ala-name-matching-index
-It can be setup on a local file system using the ```nameindex.yml``` for local development or as a part of the composition while running in docker.
+The service requires a taxonomic search index (Lucene) which can be created using the [gbif-taxonomy-for-la](https://github.com/biodiversitydata-se/gbif-taxonomy-for-la) project. Clone that project and then run:
+```
+./gbif-taxonomy-for-la-docker --backbone --filter_lang=en,sv --name-authors --namematching-distri=4.3 --namematching-index --dwca 2024-02-16
 ```
 
-make index
+Unpack `target/namematching-gbif-backbone-lucene-8-2024-02-16.tgz` and then symlink it into `/data/lucene/namematching`:
+```
+mats@xps-13:/data/lucene$ ln -s  /home/mats/src/biodiversitydata-se/gbif-taxonomy-for-la/target/namematching-gbif-backbone-lucene-8-2024-02-16 namematching
 ```
 
 ## Usage
@@ -29,7 +32,7 @@ Run locally:
 make run
 ```
 
-Build and run in Docker (using Tomcat). This requires a small change in the config file to work. See comment in Makefile.
+Build and run in Docker:
 ```
 make run-docker
 ```
