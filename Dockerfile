@@ -1,6 +1,5 @@
 FROM eclipse-temurin:11
 ENV TZ=Europe/Stockholm
-ENV DOCKERIZE_VERSION v0.7.0
 
 RUN mkdir -p \
     /data/ala-namematching-service/config \ 
