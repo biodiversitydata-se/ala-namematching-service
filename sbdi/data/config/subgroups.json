@@ -48,8 +48,8 @@
         "common": "Hares, Pikas, Rabbits"
       },
       {
-        "name": "PERRISODACTYLA",
-        "common": "Odd-toed hoofed"
+        "name": "PERISSODACTYLA",
+        "common": "Odd-toed Ungulates"
       },
       {
         "name": "RODENTIA",
@@ -224,16 +224,12 @@
         "common": "Stick Insects, Phasmids"
       },
       {
-        "name": "PHTHIRAPTERA",
-        "common": "Lice"
+        "name": "PSOCODEA",
+        "common": "Bark Lice"
       },
       {
         "name": "PLECOPTERA",
         "common": "Stoneflies"
-      },
-      {
-        "name": "PSOCOPTERA",
-        "common": "Booklice, Barklice, Barkflies"
       },
       {
         "name": "SIPHONAPTERA",
@@ -293,19 +289,19 @@
   },
   {
     "speciesGroup": "Reptiles",
-    "taxonRank": "order",
+    "taxonRank": "class",
     "taxa": [
       {
         "name": "CROCODYLIA",
-        "common": "Crocodiles"
+        "common": "Crocodilians"
       },
       {
         "name": "SQUAMATA",
-        "common": "Lizards, Snakes"
+        "common": "Squamates (Lizards, Snakes)"
       },
       {
         "name": "TESTUDINES",
-        "common": "Tortoises, Turtles, Terrapins"
+        "common": "Turtles"
       }
     ]
   },
@@ -342,8 +338,8 @@
         "common": "Carpet Sharks"
       },
       {
-        "name": "PRISTIFORMES",
-        "common": "Sawfish"
+        "name": "RHINOPRISTIFORMES",
+        "common": "Shovelnose Rays"
       },
       {
         "name": "PRISTIOPHORIFORMES",
@@ -352,10 +348,6 @@
       {
         "name": "RAJIFORMES",
         "common": "Softnose Skates"
-      },
-      {
-        "name": "RHINOBATIFORMES",
-        "common": "Guitarfish"
       },
       {
         "name": "SQUALIFORMES",
@@ -458,7 +450,7 @@
         "common": "Marine ray-finned fish"
       },
       {
-        "name": "LAMPRIDIFORMES",
+        "name": "LAMPRIFORMES",
         "common": "Opahs"
       },
       {
@@ -466,7 +458,7 @@
         "common": "Minnows"
       },
       {
-        "name": "GONORHYNCHIFORMES",
+        "name": "GONORYNCHIFORMES",
         "common": "Milkfishes"
       },
       {
@@ -494,8 +486,8 @@
         "common": "Beardfishes"
       },
       {
-        "name": "ARGENTINIFORMES",
-        "common": "Baldfishes,Tubeshoulders"
+        "name": "OSMERIFORMES",
+        "common": "Argentines"
       },
       {
         "name": "SALMONIFORMES",
@@ -524,7 +516,7 @@
     "taxonRank": "class",
     "taxa": [
       {
-        "name": "APLACOPHORA",
+        "name": "SOLENOGASTRES",
         "common": "Solenogasters"
       },
       {
@@ -584,16 +576,28 @@
         "common": "Dicots"
       },
       {
-        "name": "Angiosperms",
-        "common": "Flowering plants"
+        "name": "Lycophytes",
+        "common": "Lycophytes"
       },
       {
-        "name": "FernsAndAllies",
-        "common": "Ferns and Allies"
+        "name": "Ferns",
+        "common": "Ferns"
       },
       {
-        "name": "Gymnosperms",
-        "common": "Conifers, Cycads"
+        "name": "Conifers",
+        "common": "Conifers"
+      },
+      {
+        "name": "Cycads",
+        "common": "Cycads"
+      },
+      {
+        "name": "Ginkgo",
+        "common": "Ginkgo"
+      },
+      {
+        "name": "GnetumPlants",
+        "common": "Gnetum plants"
       }
     ]
   },
